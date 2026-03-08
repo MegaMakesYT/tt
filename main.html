@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techatronic | Advanced Industrial Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --ficsit-orange: #fa9549;
+            --ficsit-dark: #121212;
+            --ficsit-gray: #242424;
+        }
+        body {
+            background-color: var(--ficsit-dark);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), 
+                        url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-border {
+            border-left: 4px solid var(--ficsit-orange);
+        }
+        .btn-primary {
+            background-color: var(--ficsit-orange);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ffaa6b;
+            transform: translateY(-2px);
+        }
+        .card {
+            background-color: var(--ficsit-gray);
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#1a1a1a] border-b border-[#333] px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-[#fa9549] rounded-sm flex items-center justify-center text-black font-bold">T</div>
+            <span class="text-xl font-black tracking-tighter uppercase italic">Techa<span class="text-[#fa9549]">tronic</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#about" class="hover:text-[#fa9549]">Über uns</a>
+            <a href="#products" class="hover:text-[#fa9549]">Produkte</a>
+            <a href="#infrastructure" class="hover:text-[#fa9549]">Infrastruktur</a>
+            <a href="#contact" class="hover:text-[#fa9549]">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[70vh] flex items-center px-6 md:px-20">
+        <div class="max-w-3xl">
+            <h1 class="text-5xl md:text-7xl font-black uppercase mb-4 leading-tight">
+                Pionierarbeit in <br><span class="text-[#fa9549]">Kupfer & Stahl</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-8 accent-border pl-6">
+                Techatronic liefert die Basis für den Fortschritt. Von modularen Rahmen bis hin zu komplexer Brückeninfrastruktur – wir bauen die Welt von morgen.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#products" class="btn-primary text-black px-8 py-3 font-bold uppercase text-sm">Produkte ansehen</a>
+                <a href="#infrastructure" class="border border-white px-8 py-3 font-bold uppercase text-sm hover:bg-white hover:text-black transition">Infrastruktur</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 px-6 md:px-20">
+        <h2 class="text-3xl font-bold uppercase mb-12 flex items-center">
+            <span class="w-12 h-1 bg-[#fa9549] mr-4"></span> Produktkatalog
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Kupfer Card -->
+            <div class="card p-8 rounded-lg">
+                <i class="fa-solid fa-bolt text-4xl text-[#fa9549] mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">Kupfer-Lösungen</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Hochreines Kupferblech</li>
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Industrieller Kupferdraht</li>
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Hochspannungskabel</li>
+                </ul>
+            </div>
+
+            <!-- Rahmen Card -->
+            <div class="card p-8 rounded-lg">
+                <i class="fa-solid fa-cubes text-4xl text-[#fa9549] mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">Bau-Komponenten</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Modulare Rahmen (M-Series)</li>
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Hochleistungsmotoren</li>
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Präzisionswerkzeuge</li>
+                </ul>
+            </div>
+
+            <!-- Beton Card -->
+            <div class="card p-8 rounded-lg border-2 border-[#fa9549]/30">
+                <i class="fa-solid fa-trowel-bricks text-4xl text-[#fa9549] mb-6"></i>
+                <h3 class="text-xl font-bold mb-4 uppercase">Schwerindustrie</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Stahlbetonträger</li>
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Schnellhärtender Beton</li>
+                    <li><i class="fa-solid fa-check text-xs mr-2"></i> Brückenelemente</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bridge Building Special -->
+    <section id="infrastructure" class="py-20 bg-[#1a1a1a] px-6 md:px-20">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-black uppercase mb-6 leading-none">Meisterwerke der <br>Logistik</h2>
+                <p class="text-gray-400 mb-6 italic border-l-2 border-[#fa9549] pl-4">
+                    "Ein Brückenbau von Techatronic ist mehr als nur eine Verbindung. Es ist ein Versprechen für Stabilität und Effizienz – egal ob für schwere Frachtfahrzeuge oder komplexe Fördersysteme."
+                </p>
+                <p class="text-gray-400 mb-8">
+                    Wir kombinieren unsere eigenen Stahlbetonträger mit fortschrittlicher Architektur, um Hindernisse in Rekordzeit zu überwinden. Unsere modularen Lösungen ermöglichen Brückenbauwerke, die selbst extremsten Belastungen standhalten.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="text-center p-4 bg-black rounded">
+                        <span class="block text-[#fa9549] text-3xl font-bold">100%</span>
+                        <span class="text-[10px] uppercase tracking-widest">Eigenproduktion</span>
+                    </div>
+                    <div class="text-center p-4 bg-black rounded">
+                        <span class="block text-[#fa9549] text-3xl font-bold">STAB-4</span>
+                        <span class="text-[10px] uppercase tracking-widest">Sicherheitsgrad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-[#fa9549]"></div>
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000" alt="Industrial Construction" class="rounded-sm shadow-2xl">
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-[#fa9549]"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer -->
+    <footer id="contact" class="py-20 px-6 md:px-20 border-t border-[#333]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold uppercase mb-8">Bereit für die Expansion?</h2>
+            <p class="text-gray-400 mb-12">Kontaktieren Sie die Techatronic-Zentrale für Großbestellungen oder spezialisierte Infrastrukturprojekte.</p>
+            
+            <div class="flex flex-wrap justify-center gap-8 mb-16">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-location-dot text-[#fa9549]"></i>
+                    <span>Sektor 4, Grüne Felder, Massage-2(A-B)b</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-microchip text-[#fa9549]"></i>
+                    <span>Frequenz: 808.TECHA</span>
+                </div>
+            </div>
+
+            <div class="text-[10px] uppercase tracking-widest text-gray-600">
+                &copy; 2026 Techatronic Industrial Solutions. Alle Rechte vorbehalten. | Ein Tochterunternehmen von FICSIT Inc.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
